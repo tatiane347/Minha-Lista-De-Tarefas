@@ -1,0 +1,110 @@
+/* minha-lista-de-tarefas/frontend/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha no topo */
+    min-height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+    margin: 0;
+    padding: 20px; /* Adiciona um padding para não colar nas bordas */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Largura máxima para o container */
+    margin-top: 50px; /* Margem superior para afastar do topo */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+#task-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex-grow: 1; /* Ocupa o espaço disponível */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#task-form button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#task-form button:hover {
+    background-color: #0056b3;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#task-list li {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+#task-list li.completed {
+    background-color: #e6ffe6; /* Fundo mais claro para tarefas concluídas */
+    text-decoration: line-through;
+    color: #888;
+}
+
+#task-list li span {
+    flex-grow: 1;
+    cursor: pointer; /* Indica que o texto pode ser clicado para marcar/desmarcar */
+}
+
+#task-list li .actions {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões de ação */
+}
+
+#task-list li button {
+    background-color: #dc3545; /* Vermelho para excluir */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#task-list li button.complete-btn {
+    background-color: #28a745; /* Verde para concluir */
+}
+
+#task-list li button:hover {
+    opacity: 0.9;
+}
