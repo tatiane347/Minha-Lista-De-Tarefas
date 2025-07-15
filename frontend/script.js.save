@@ -1,6 +1,4 @@
-const API_URL = 'https://minha-lista-de-tarefas.onrender.com/tasks'; // URL do seu backend implantado
-
-// Seleciona os elementos HTML
+MMMMMMMMconst API_URL = 'https://minha-lista-de-tarefas.onrender.com/tasks'Seleciona os elementos HTML
 const taskForm = document.getElementById('task-form');
 const taskInput = document.getElementById('task-input');
 const taskList = document.getElementById('task-list');

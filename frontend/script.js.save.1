@@ -1,4 +1,6 @@
-const API_URL = 'https://minha-lista-de-tarefas.onrender.com/tasks'; // URL do seu backend implantado
+
+const API_URL = 'https://minha-lista-de-tarefas.onrender.com/tasks'; // ESTA É A URL DO SEU BACKEND NO RENDER!const API_URL = 'https://minha-lista-de-tarefas.onrender.com/tasks'; // ESTA É A URL DO SEU BACKEND NO RENDER!// minha-lista-de-tarefas/frontend/script.js
+const API_URL = 'http://localhost:3000/tasks'; // URL do seu backend
 
 // Seleciona os elementos HTML
 const taskForm = document.getElementById('task-form');
@@ -18,8 +20,7 @@ async function fetchTasks() {
         renderTasks(tasks); // Chama a função para exibir as tarefas na interface
     } catch (error) {
         console.error('Erro ao buscar tarefas:', error);
-        taskList.innerHTML = '<li style="color: red;">Erro ao carregar as tarefas. Verifique se o servidor está rodando.</li>';
-    }
+        taskList.innerHTML = '<li style="color: red;">Erro ao car }
 }
 
 // Função para adicionar uma nova tarefa
