@@ -1,4 +1,4 @@
-// minha-lista-de-tarefas/frontend/script.js
+const API_URL = 'https://minha-lista-de-tarefas.onrender.com/tasks'; // ESTA É A URL DO SEU BACKEND NO RENDER!const API_URL = 'https://minha-lista-de-tarefas.onrender.com/tasks'; // ESTA É A URL DO SEU BACKEND NO RENDER!// minha-lista-de-tarefas/frontend/script.js
 const API_URL = 'http://localhost:3000/tasks'; // URL do seu backend
 
 // Seleciona os elementos HTML
